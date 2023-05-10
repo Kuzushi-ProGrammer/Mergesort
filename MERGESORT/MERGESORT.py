@@ -4,15 +4,12 @@ import random
 
 
 def sort(array):
-    midpoint = len(array) // 2
-    leftArray = array[:midpoint]
-    rightArray = array[midpoint:]
-
     if len(array) <= 1:
-        if leftArray > rightArray: #cannot do leftArray[0] cause its out of range apparently??????
-            print("swapping")
-            leftArray, rightArray = rightArray, leftArray
-        return print("Done")
+        return print("done but len")
+
+    midpoint = len(array) // 2
+    leftArray = array[:midpoint] # very confused, real
+    rightArray = array[midpoint:]
 
     print(array)
     print(f"L {leftArray}, R {rightArray}")
